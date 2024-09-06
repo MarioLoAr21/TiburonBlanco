@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="registros" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a81f97b5-bfd4-488e-8655-53b070f8bce9">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="status" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     registro.`idPaquete` AS registro_idPaquete,
+     registro.`idHorario` AS registro_idHorario,
+     registro.`Categoria` AS registro_Categoria,
+     registro.`Status_Pago` AS registro_Status_Pago,
+     alumnos.`idAlumnos` AS alumnos_idAlumnos,
+     alumnos.`nombre` AS alumnos_nombre,
+     alumnos.`apellidoP` AS alumnos_apellidoP,
+     alumnos.`apellidoM` AS alumnos_apellidoM,
+     pagos.`folio` AS pagos_folio
+FROM
+     `alumnos` alumnos INNER JOIN `registro` registro ON alumnos.`idAlumnos` = registro.`idAlumno`
+     INNER JOIN `pagos` pagos ON alumnos.`idAlumnos` = pagos.`idAlumno`
+WHERE
+     registro.`Status_Pago` = 'Pagado']]>
+	</queryString>
+	<field name="registro_idPaquete" class="java.lang.String"/>
+	<field name="registro_idHorario" class="java.lang.String"/>
+	<field name="registro_Categoria" class="java.lang.String"/>
+	<field name="registro_Status_Pago" class="java.lang.String"/>
+	<field name="alumnos_idAlumnos" class="java.lang.Integer"/>
+	<field name="alumnos_nombre" class="java.lang.String"/>
+	<field name="alumnos_apellidoP" class="java.lang.String"/>
+	<field name="alumnos_apellidoM" class="java.lang.String"/>
+	<field name="pagos_folio" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="88" splitType="Stretch">
+			<staticText>
+				<reportElement x="177" y="0" width="209" height="49" uuid="06344705-75f1-47b7-89d2-1f679b3a4468"/>
+				<textElement>
+					<font size="36"/>
+				</textElement>
+				<text><![CDATA[REPORTE]]></text>
+			</staticText>
+			<image>
+				<reportElement x="29" y="10" width="103" height="69" uuid="59ef94bc-679c-4558-a00b-5a0969b9afa8"/>
+				<imageExpression><![CDATA["C:\\Program Files\\TiburonBlanco\\tiburonblanco.jpg"]]></imageExpression>
+			</image>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="400" y="0" width="170" height="39" uuid="81045f26-4e4a-4077-bc63-7df4c3c6efdc"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="149" y="36" width="237" height="49" uuid="25879413-ab34-4641-b9f8-15f38aafe947"/>
+				<textElement>
+					<font size="36"/>
+				</textElement>
+				<text><![CDATA[ Ya Pagado]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="38" splitType="Stretch">
+			<staticText>
+				<reportElement x="100" y="0" width="100" height="20" uuid="a29240bc-8f17-4c2f-893e-93e11d18cdf9"/>
+				<text><![CDATA[nombre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="0" width="100" height="20" uuid="5d361467-19fc-4700-9dc5-425828295252"/>
+				<text><![CDATA[apellidoP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="0" width="100" height="20" uuid="3d060140-41e1-4d96-b8f9-0d7163025225"/>
+				<text><![CDATA[idPaquete]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="0" width="100" height="20" uuid="0e417020-d811-42a7-add3-6203c0853bd0"/>
+				<text><![CDATA[Horario]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="500" y="0" width="100" height="20" uuid="4b42ca78-e761-4822-87ba-b0047a52ceac"/>
+				<text><![CDATA[Status_Pago]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="3702ef43-0511-43cc-8889-7ae9a1ca1820"/>
+				<text><![CDATA[pagos_folio]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="48" splitType="Stretch">
+			<textField>
+				<reportElement x="100" y="0" width="100" height="20" uuid="cc0b85c4-b484-4c3f-9ef9-71a4ae68fbe6"/>
+				<textFieldExpression><![CDATA[$F{alumnos_nombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="0" width="100" height="20" uuid="573ec8e8-4a31-4caa-85b5-8400a63a8af6"/>
+				<textFieldExpression><![CDATA[$F{alumnos_apellidoP}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="0" width="100" height="20" uuid="38f0808a-a5d7-436a-a0a7-1c302b145a7b"/>
+				<textFieldExpression><![CDATA[$F{registro_idPaquete}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="0" width="100" height="20" uuid="559987a9-2b31-4940-8943-a0bb0678185b"/>
+				<textFieldExpression><![CDATA[$F{registro_idHorario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="0" width="100" height="20" uuid="468d2d9d-d234-4479-a412-87f44b7dbad2"/>
+				<textFieldExpression><![CDATA[$F{registro_Status_Pago}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20" uuid="9eaa2c10-fe62-4923-b8b4-86acd59b4ff3"/>
+				<textFieldExpression><![CDATA[$F{pagos_folio}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="24" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="15" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

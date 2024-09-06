@@ -1,0 +1,164 @@
+UPDATE carril set carril1=(select count(*) from registro where carril=1 and idpaquete='"+p+"' and categoria='"+c+"' and idhorario='"+h+"'), carril2=(select count(*) from registro where carril=2 and idpaquete='"+p+"' and categoria='"+c+"' and idhorario='"+h+"') where paquete='"+p+"' and categoria='"+c+"' and horario='"+h+"'";
+
+
+public void updateCarril1() {
+        Connection con = null;
+        try {
+            con = getConection();
+            //---------------------------------------------añadir un alumno a el registro
+            String v;
+            String p, c, h;
+            p = jtxtPaquete.getText().toString();
+            h = jtxtHorario.getText().toString();
+            c = jtxtCategoria.getText().toString();
+            v = getValorCarril1(p, c, h);
+            int vi = Integer.parseInt(v);
+            vi = vi - 1;
+            v = Integer.toString(vi);
+            //String d=(Integer.toString(datHorarioCbx.getSelectedIndex()+1));
+            //----------------------------------------------
+            ps = con.prepareStatement("UPDATE Carril SET carril1=?  WHERE paquete=? AND categoria=? AND Horario=?");
+
+            ps.setString(1, v);
+
+            ps.setString(2, p);
+            ps.setString(3, c);
+            ps.setString(4, h);
+
+            int res = ps.executeUpdate();
+            if (res > 0) {
+                JOptionPane.showMessageDialog(rootPane, "Carril Actualizado");
+                limpiarCajas();
+            } else {
+                JOptionPane.showMessageDialog(rootPane, "Error al Actualizar carril");
+                limpiarCajas();
+            }
+            con.close();
+        } catch (Exception e) {
+            System.out.println(e + "Error 3 :D");
+        }
+    }
+
+ public void updateCarril2() {
+        Connection con = null;
+        try {
+            con = getConection();
+            //---------------------------------------------añadir un alumno a el registro
+            String v;
+            String p, c, h;
+            p = jtxtPaquete.getText().toString();
+            h = jtxtHorario.getText().toString();
+            c = jtxtCategoria.getText().toString();
+            v = getValorCarril2(p, c, h);
+            int vi = Integer.parseInt(v);
+            vi = vi - 1;
+            v = Integer.toString(vi);
+            //String d=(Integer.toString(datHorarioCbx.getSelectedIndex()+1));
+            //----------------------------------------------
+            ps = con.prepareStatement("UPDATE Carril SET carril2=?  WHERE paquete=? AND categoria=? AND Horario=?");
+
+            ps.setString(1, v);
+            ps.setString(2, p);
+            ps.setString(3, c);
+            ps.setString(4, h);
+
+            int res = ps.executeUpdate();
+            if (res > 0) {
+                JOptionPane.showMessageDialog(rootPane, "Carri2 Actualizado");
+                limpiarCajas();
+            } else {
+                JOptionPane.showMessageDialog(rootPane, "Error al Actualizar carril");
+                limpiarCajas();
+            }
+            con.close();
+        } catch (Exception e) {
+            System.out.println(e + "Error 4 :D");
+        }
+    }
+
+
+public void updateCarril1()
+{
+    Connection con=null;
+    try{
+            con=getConection();
+            //---------------------------------------------añadir un alumno a el registro
+                String v="";
+                String p,c,h;
+                p=datPaqueteCbx.getSelectedItem().toString();
+                c=datCategoriaCbx.getSelectedItem().toString();
+                h=datHorarioCbx.getSelectedItem().toString();
+                v=getValorCarril1(p, c, h);
+                int vi=Integer.parseInt(v);
+                vi=vi+1;
+                v=Integer.toString(vi);
+                //String d=(Integer.toString(datHorarioCbx.getSelectedIndex()+1));
+            //----------------------------------------------
+            ps= con.prepareStatement("UPDATE Carril SET carril1=?  WHERE paquete=? AND categoria=? AND Horario=?");
+            
+                ps.setString(1,v);
+                
+                ps.setString(2,p);
+                ps.setString(3,c);
+                ps.setString(4,h);
+
+            int res=ps.executeUpdate();
+            if(res>0)
+            {
+                JOptionPane.showMessageDialog(rootPane,"Carril Actualizado");
+                limpiarCajas();
+            }
+            else
+            {
+                JOptionPane.showMessageDialog(rootPane,"Error al Actualizar carril");
+                limpiarCajas();
+            }
+            con.close();
+        }
+        catch(Exception e)
+        {
+            System.out.println(e+"Error 3 :D");
+        }    
+}
+public void updateCarril2()
+{
+    Connection con=null;
+    try{
+            con=getConection();
+             //---------------------------------------------añadir un alumno a el registro
+                String v="";
+                String p,c,h;
+                p=datPaqueteCbx.getSelectedItem().toString();
+                c=datCategoriaCbx.getSelectedItem().toString();
+                h=datHorarioCbx.getSelectedItem().toString();
+                v=getValorCarril2(p, c, h);
+                int vi=Integer.parseInt(v);
+                vi=vi+1;
+                v=Integer.toString(vi);
+                //String d=(Integer.toString(datHorarioCbx.getSelectedIndex()+1));
+            //----------------------------------------------
+            ps= con.prepareStatement("UPDATE Carril SET carril2=?  WHERE paquete=? AND categoria=? AND Horario=?");
+            
+                ps.setString(1,v);                
+                ps.setString(2,p);
+                ps.setString(3,c);
+                ps.setString(4,h);
+
+            int res=ps.executeUpdate();
+            if(res>0)
+            {
+                JOptionPane.showMessageDialog(rootPane,"Carri2 Actualizado");
+                limpiarCajas();
+            }
+            else
+            {
+                JOptionPane.showMessageDialog(rootPane,"Error al Actualizar carril");
+                limpiarCajas();
+            }
+            con.close();
+        }
+        catch(Exception e)
+        {
+            System.out.println(e+"Error 4 :D");
+        }       
+}

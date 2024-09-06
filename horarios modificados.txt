@@ -1,0 +1,164 @@
+horarios modificados la preimera vez
+------------------------------------------------------------------------------------------------------------------------
+
+Martes, Jueves	Bebes	02:40 - 03:10 p.m.	0	0	0
+
+Lunes, Miercoles, Viernes	Bebes	02:40 - 03:10 p.m.	0	0	0
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+Lunes, Miercoles, Viernes	Bebes	08:10 - 08:40 p.m.	0	0	0
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+Martes, Jueves	Bebes	02:10 - 02:40 p.m.	0	0	0
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+Sabado	Bebes	08:00 - 08:30 a.m.	0	0	0
+Sabado	Bebes	08:30 - 09:00 a.m.	0	0	0
+Sabado	Bebes	09:00 - 09:30 a.m.	0	0	0
+Sabado	Bebes	09:30 - 10:00 a.m.	0	0	0
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+layout
+
+	Registro
+	Tregistro
+
+
+
+
+'1', 'Lunes, Miercoles, Viernes', 'Adultos', '06:00 - 07:00 a.m.', '3', '3', '5'
+'2', 'Lunes, Miercoles, Viernes', 'Adultos', '07:00 - 08:00 a.m.', '5', '5', '5'
+'3', 'Lunes, Miercoles, Viernes', 'Adultos', '08:00 - 09:00 a.m.', '4', '5', '5'
+'4', 'Lunes, Miercoles, Viernes', 'Adultos', '09:00 - 10:00 a.m.', '4', '4', '5'
+'5', 'Lunes, Miercoles, Viernes', 'Adultos', '07:00 - 08:00 p.m.', '5', '5', '5'
+'6', 'Lunes, Miercoles, Viernes', 'Adultos', '08:00 - 09:00 p.m.', '5', '5', '5'
+'7', 'Lunes, Miercoles, Viernes', 'Adultos', '09:00 - 10:00 p.m.', '3', '3', '5'
+'8', 'Lunes, Miercoles, Viernes', 'Niños', '12:00 - 01:00 p.m.', '0', '0', '8'
+'9', 'Lunes, Miercoles, Viernes', 'Niños', '01:00 - 02:00 p.m.', '0', '0', '8'
+'10', 'Lunes, Miercoles, Viernes', 'Niños', '02:00 - 03:00 p.m.', '7', '5', '8'
+'11', 'Lunes, Miercoles, Viernes', 'Niños', '03:00 - 04:00 p.m.', '7', '4', '8'
+'12', 'Lunes, Miercoles, Viernes', 'Niños', '10:00 - 11:00 a.m.', '0', '1', '8'
+'13', 'Lunes, Miercoles, Viernes', 'Niños', '11:00 - 12:00 a.m.', '0', '0', '8'
+'14', 'Lunes, Miercoles, Viernes', 'Niños', '04:00 - 05:00 p.m.', '7', '6', '8'
+'15', 'Lunes, Miercoles, Viernes', 'Niños', '05:00 - 06:00 p.m.', '8', '8', '8'
+'16', 'Lunes, Miercoles, Viernes', 'Niños', '06:00 - 07:00 p.m.', '7', '8', '8'
+'17', 'Lunes, Miercoles, Viernes', 'Bebes', '08:10 - 08:40 a.m.', '0', '0', '3'
+'18', 'Lunes, Miercoles, Viernes', 'Bebes', '08:40 - 09:10 a.m.', '0', '0', '3'
+'19', 'Lunes, Miercoles, Viernes', 'Bebes', '09:10 - 09:40 a.m.', '0', '0', '3'
+'20', 'Lunes, Miercoles, Viernes', 'Bebes', '09:40 - 10:10 a.m.', '0', '0', '3'
+'21', 'Lunes, Miercoles, Viernes', 'Bebes', '10:10 - 10:40 a.m.', '0', '0', '3'
+'22', 'Lunes, Miercoles, Viernes', 'Bebes', '10:40 - 11:10 a.m.', '0', '0', '3'
+'23', 'Lunes, Miercoles, Viernes', 'Bebes', '11:10 - 11:40 a.m.', '0', '0', '3'
+'24', 'Lunes, Miercoles, Viernes', 'Bebes', '11:40 - 12:10 p.m.', '0', '0', '3'
+'25', 'Lunes, Miercoles, Viernes', 'Bebes', '12:10 - 12:40 p.m.', '0', '0', '3'
+'26', 'Lunes, Miercoles, Viernes', 'Bebes', '12:40 - 01:10 p.m.', '0', '0', '3'
+'27', 'Lunes, Miercoles, Viernes', 'Bebes', '01:10 - 01:40 p.m.', '0', '0', '3'
+'28', 'Lunes, Miercoles, Viernes', 'Bebes', '01:40 - 02:10 p.m.', '0', '0', '3'
+'29', 'Lunes, Miercoles, Viernes', 'Bebes', '03:10 - 03:40 p.m.', '0', '0', '3'
+'30', 'Lunes, Miercoles, Viernes', 'Bebes', '03:40 - 04:10 p.m.', '0', '0', '3'
+'31', 'Lunes, Miercoles, Viernes', 'Bebes', '04:10 - 04:40 p.m.', '2', '1', '3'
+'32', 'Lunes, Miercoles, Viernes', 'Bebes', '04:40 - 05:10 p.m.', '3', '0', '3'
+'33', 'Lunes, Miercoles, Viernes', 'Bebes', '05:10 - 05:40 p.m.', '2', '3', '3'
+'34', 'Lunes, Miercoles, Viernes', 'Bebes', '05:40 - 06:10 p.m.', '2', '1', '3'
+'35', 'Lunes, Miercoles, Viernes', 'Bebes', '06:10 - 06:40 p.m.', '3', '2', '3'
+'36', 'Lunes, Miercoles, Viernes', 'Bebes', '06:40 - 07:10 p.m.', '3', '2', '3'
+'37', 'Lunes, Miercoles, Viernes', 'Bebes', '07:10 - 07:40 p.m.', '3', '1', '3'
+'38', 'Lunes, Miercoles, Viernes', 'Bebes', '07:40 - 08:10 p.m.', '2', '3', '3'
+'39', 'Lunes, Miercoles, Viernes', 'Bebes', '08:10 - 08:40 p.m.', '0', '0', '0'
+'40', 'Martes, Jueves', 'Adultos', '06:00 - 07:00 a.m.', '5', '4', '5'
+'41', 'Martes, Jueves', 'Adultos', '07:00 - 08:00 a.m.', '5', '2', '5'
+'42', 'Martes, Jueves', 'Adultos', '08:00 - 09:00 a.m.', '5', '5', '5'
+'43', 'Martes, Jueves', 'Adultos', '09:00 - 10:00 a.m.', '4', '1', '5'
+'44', 'Martes, Jueves', 'Adultos', '07:00 - 08:00 p.m.', '5', '4', '5'
+'45', 'Martes, Jueves', 'Adultos', '08:00 - 09:00 p.m.', '5', '5', '5'
+'46', 'Martes, Jueves', 'Adultos', '09:00 - 10:00 p.m.', '3', '5', '5'
+'47', 'Martes, Jueves', 'Niños', '10:00 - 11:00 a.m.', '0', '0', '8'
+'48', 'Martes, Jueves', 'Niños', '11:00 - 12:00 a.m.', '1', '1', '8'
+'49', 'Martes, Jueves', 'Niños', '12:00 - 01:00 p.m.', '0', '0', '8'
+'50', 'Martes, Jueves', 'Niños', '01:00 - 02:00 p.m.', '0', '1', '8'
+'51', 'Martes, Jueves', 'Niños', '02:00 - 03:00 p.m.', '0', '0', '8'
+'52', 'Martes, Jueves', 'Niños', '03:00 - 04:00 p.m.', '3', '8', '8'
+'53', 'Martes, Jueves', 'Niños', '04:00 - 05:00 p.m.', '7', '3', '8'
+'54', 'Martes, Jueves', 'Niños', '05:00 - 06:00 p.m.', '5', '7', '8'
+'55', 'Martes, Jueves', 'Niños', '06:00 - 07:00 p.m.', '8', '8', '8'
+'56', 'Martes, Jueves', 'Niños', '07:00 - 08:00 p.m.', '0', '1', '8'
+'57', 'Martes, Jueves', 'Bebes', '08:10 - 08:40 a.m.', '1', '0', '3'
+'58', 'Martes, Jueves', 'Bebes', '08:40 - 09:10 a.m.', '0', '0', '3'
+'59', 'Martes, Jueves', 'Bebes', '09:10 - 09:40 a.m.', '0', '0', '3'
+'60', 'Martes, Jueves', 'Bebes', '09:40 - 10:10 a.m.', '0', '0', '3'
+'61', 'Martes, Jueves', 'Bebes', '10:10 - 10:40 a.m.', '0', '0', '3'
+'62', 'Martes, Jueves', 'Bebes', '10:40 - 11:10 a.m.', '0', '0', '3'
+'63', 'Martes, Jueves', 'Bebes', '11:10 - 11:40 a.m.', '0', '0', '3'
+'64', 'Martes, Jueves', 'Bebes', '11:40 - 12:10 p.m.', '0', '0', '3'
+'65', 'Martes, Jueves', 'Bebes', '12:10 - 12:40 p.m.', '0', '0', '3'
+'66', 'Martes, Jueves', 'Bebes', '12:40 - 01:10 p.m.', '0', '0', '3'
+'67', 'Martes, Jueves', 'Bebes', '01:10 - 01:40 p.m.', '0', '0', '3'
+'68', 'Martes, Jueves', 'Bebes', '01:40 - 02:10 p.m.', '0', '0', '3'
+'69', 'Martes, Jueves', 'Bebes', '02:10 - 02:40 p.m.', '0', '0', '0'
+'70', 'Martes, Jueves', 'Bebes', '02:40 - 03:10 p.m.', '0', '0', '0'
+'71', 'Martes, Jueves', 'Bebes', '03:10 - 03:40 p.m.', '0', '0', '3'
+'72', 'Martes, Jueves', 'Bebes', '03:40 - 04:10 p.m.', '0', '0', '3'
+'73', 'Martes, Jueves', 'Bebes', '04:10 - 04:40 p.m.', '2', '0', '3'
+'74', 'Martes, Jueves', 'Bebes', '04:40 - 05:10 p.m.', '3', '0', '3'
+'75', 'Martes, Jueves', 'Bebes', '05:10 - 05:40 p.m.', '3', '2', '3'
+'76', 'Martes, Jueves', 'Bebes', '05:40 - 06:10 p.m.', '3', '1', '3'
+'77', 'Martes, Jueves', 'Bebes', '06:10 - 06:40 p.m.', '3', '1', '3'
+'78', 'Martes, Jueves', 'Bebes', '06:40 - 07:10 p.m.', '3', '0', '3'
+'79', 'Martes, Jueves', 'Bebes', '07:10 - 07:40 p.m.', '3', '1', '3'
+'80', 'Martes, Jueves', 'Bebes', '07:40 - 08:10 p.m.', '3', '2', '3'
+'81', 'Sabado', 'Adultos', '06:00 - 07:00 a.m.', '0', '0', '5'
+'82', 'Sabado', 'Adultos', '07:00 - 08:00 a.m.', '0', '0', '5'
+'83', 'Sabado', 'Adultos', '08:00 - 09:00 a.m.', '5', '5', '5'
+'84', 'Sabado', 'Adultos', '09:00 - 10:00 a.m.', '4', '1', '5'
+'85', 'Sabado', 'Niños', '10:00 - 11:00 a.m.', '5', '8', '8'
+'86', 'Sabado', 'Niños', '11:00 - 12:00 p.m.', '7', '6', '8'
+'87', 'Sabado', 'Niños', '12:00 - 01:00 p.m.', '5', '0', '8'
+'88', 'Sabado', 'Niños', '01:00 - 02:00 p.m.', '0', '0', '8'
+'89', 'Sabado', 'Bebes', '08:00 - 08:30 a.m.', '0', '0', '3'
+'90', 'Sabado', 'Bebes', '08:30 - 09:00 a.m.', '0', '1', '3'
+'91', 'Sabado', 'Bebes', '09:00 - 09:30 a.m.', '3', '1', '3'
+'92', 'Sabado', 'Bebes', '09:30 - 10:00 a.m.', '2', '0', '3'
+'93', 'Sabado', 'Bebes', '10:00 - 10:30 a.m.', '0', '0', '3'
+'94', 'Sabado', 'Bebes', '10:30 - 11:00 a.m.', '0', '1', '3'
+'95', 'Sabado', 'Bebes', '11:00 - 11:30 a.m.', '3', '1', '3'
+'96', 'Sabado', 'Bebes', '11:30 - 12:00 p.m.', '2', '0', '3'
+'97', 'Sabado', 'Bebes', '12:00 - 12:30 p.m.', '3', '0', '3'
+'98', 'Sabado', 'Bebes', '12:30 - 01:00 p.m.', '3', '0', '3'
+'99', 'Sabado', 'Bebes', '01:00 - 01:30 p.m.', '0', '0', '3'
+'100', 'Sabado', 'Bebes', '01:30 - 02:00 p.m.', '0', '0', '3'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
