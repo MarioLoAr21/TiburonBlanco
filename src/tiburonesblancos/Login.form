@@ -141,7 +141,7 @@
         <Component class="javax.swing.JButton" name="inicio">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="fb" green="b3" red="64" type="rgb"/>
+              <Color blue="7c" green="44" red="4" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Century" size="18" style="0"/>

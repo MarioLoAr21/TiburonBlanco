@@ -188,7 +188,7 @@ public void validar(){
         });
         jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 280, 370, 30));
 
-        inicio.setBackground(new java.awt.Color(100, 179, 251));
+        inicio.setBackground(new java.awt.Color(4, 68, 124));
         inicio.setFont(new java.awt.Font("Century", 0, 18)); // NOI18N
         inicio.setForeground(new java.awt.Color(255, 255, 255));
         inicio.setText("Acceder");
