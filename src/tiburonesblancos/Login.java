@@ -48,9 +48,8 @@ Connection conn = null;
     
 private void limpiarCajas()
 {
-   // txtIdM.setText(null);
-   // txtIdP.setText(null);
-   // txtCostoM.setText(null);
+ jTextField1.setText(null);
+ jTextField2.setText(null);
         
         
  }
@@ -112,7 +111,7 @@ public void validar(){
         jLabel6 = new javax.swing.JLabel();
         jPasswordField1 = new javax.swing.JPasswordField();
         jPanel1 = new javax.swing.JPanel();
-        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jTextField2 = new javax.swing.JPasswordField();
         jTextField1 = new javax.swing.JTextField();
@@ -122,9 +121,9 @@ public void validar(){
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jSeparator3 = new javax.swing.JSeparator();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
+        jLabel9 = new javax.swing.JLabel();
 
         jLabel6.setText("jLabel6");
 
@@ -140,15 +139,12 @@ public void validar(){
         });
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(4, 68, 124));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel7.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel7.setFont(new java.awt.Font("Century", 1, 24)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(61, 141, 176));
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setText("Tiburón Blanco");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(437, 260, 300, -1));
+        jLabel8.setForeground(new java.awt.Color(4, 68, 124));
+        jLabel8.setText("Version 2");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 570, -1, -1));
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Salir.png"))); // NOI18N
         jButton1.setBorder(null);
@@ -160,9 +156,10 @@ public void validar(){
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 30, 30));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 0, 30, 30));
 
         jTextField2.setFont(new java.awt.Font("Century", 0, 18)); // NOI18N
+        jTextField2.setForeground(new java.awt.Color(4, 68, 124));
         jTextField2.setBorder(null);
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -174,18 +171,24 @@ public void validar(){
                 jTextField2KeyPressed(evt);
             }
         });
-        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 370, 30));
+        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 360, 370, 30));
 
         jTextField1.setFont(new java.awt.Font("Century", 0, 18)); // NOI18N
+        jTextField1.setForeground(new java.awt.Color(4, 68, 124));
         jTextField1.setBorder(null);
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
         jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 jTextField1KeyPressed(evt);
             }
         });
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 370, 30));
+        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 280, 370, 30));
 
-        inicio.setBackground(new java.awt.Color(61, 141, 176));
+        inicio.setBackground(new java.awt.Color(100, 179, 251));
         inicio.setFont(new java.awt.Font("Century", 0, 18)); // NOI18N
         inicio.setForeground(new java.awt.Color(255, 255, 255));
         inicio.setText("Acceder");
@@ -200,34 +203,37 @@ public void validar(){
                 inicioKeyPressed(evt);
             }
         });
-        jPanel1.add(inicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 410, 170, 40));
+        jPanel1.add(inicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 430, 170, 40));
 
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/LogoFinal.png"))); // NOI18N
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 80, 300, 170));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 80, 300, 170));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/LoginBonito.png"))); // NOI18N
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 0, 300, 540));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Login/LateralDerecho.jpg"))); // NOI18N
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 0, 520, 600));
 
         jLabel1.setFont(new java.awt.Font("Century", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(61, 141, 176));
+        jLabel1.setForeground(new java.awt.Color(4, 68, 124));
         jLabel1.setText("INICIAR SESIÓN");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, -1, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 40, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Century", 1, 12)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(61, 141, 176));
+        jLabel2.setForeground(new java.awt.Color(4, 68, 124));
         jLabel2.setText("USUARIO");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, -1, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 260, -1, 20));
 
         jLabel4.setFont(new java.awt.Font("Century", 1, 12)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(61, 141, 176));
+        jLabel4.setForeground(new java.awt.Color(4, 68, 124));
         jLabel4.setText("CONTRASEÑA");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, -1, -1));
-        jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, -1, -1));
-        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, 370, 20));
-        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, 370, 20));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 340, -1, 20));
+        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 390, 370, 20));
+        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 310, 370, 20));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 740, 540));
+        jLabel9.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel9.setOpaque(true);
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 540, 600));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 600));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -259,6 +265,7 @@ public void validar(){
             JOptionPane.showMessageDialog(rootPane,"Contraseña o Usuario Incorrecto");
             jTextField1.setText("");
             jTextField2.setText("");
+            limpiarCajas();
             
         }
         }
@@ -365,6 +372,10 @@ public void validar(){
         }
     }//GEN-LAST:event_jTextField2KeyPressed
 
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -410,12 +421,12 @@ public void validar(){
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JSeparator jSeparator3;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JPasswordField jTextField2;
     // End of variables declaration//GEN-END:variables

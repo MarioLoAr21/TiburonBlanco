@@ -16,13 +16,38 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
-import static tiburonesblancos.TRegistro.getConection;
+
+
+
 
 /**
  *
  * @author Giuseppe
  */
 public class Grupos extends javax.swing.JFrame{
+    
+    String Cadena;
+static String login="root";
+static String password="16070065";
+static String url="jdbc:mysql://localhost/tiburonesblancos?characterEncoding=utf8";
+
+PreparedStatement ps;
+ResultSet rs;
+public static Connection getConection()
+{
+Connection conn = null;
+    try
+           {
+              Class.forName ("com.mysql.jdbc.Driver").newInstance ();
+               conn = DriverManager.getConnection (url, login, password);               
+               System.out.println ("Conexion establecida");   
+           }    catch (Exception e)
+           {
+               System.err.println ("Hubo problema para la conexión"+e);
+           }
+           
+        return conn;  
+ }
 
     /** Creates new form Grupos */
     public Grupos() {
@@ -31,13 +56,15 @@ public class Grupos extends javax.swing.JFrame{
         //rsscalelabel.RSScaleLabel.setScaleLabel(jLFondo,"src/imgs/Actividades_Natacion.jpg");
         mostrar();
         
-            Conexion x = new Conexion();        
+            Conexion x = new Conexion();
             x.pagosActivos();
             x.noPagados();
             x.Pagados();
+            
+            Table.setDefaultRenderer(Object.class, new ColorearFilas(3));
     }
 
-       
+
     public void countCarriles(){
        Conexion x = new Conexion();
        

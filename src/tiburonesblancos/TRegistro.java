@@ -252,7 +252,7 @@ public class TRegistro extends javax.swing.JFrame {
             x.Pagados();
         initComponents();
         this.setLocationRelativeTo(null);
-        //rsscalelabel.RSScaleLabel.setScaleLabel(jLFondo, "C:\\Users\\Giuseppe\\Desktop\\Tiburon\\Fondo.jpg");
+
 
         Connection con = null;
           //  ----------------------------------------------------------------------

@@ -19,8 +19,8 @@ import static tiburonesblancos.RPagos.getConection;
 public class pagosActivos {
     //----------------------------------------------------------------------------------------------------    
 static String login="root";
-static String password="";
-static String url="jdbc:mysql://localhost/tiburonesblancos";
+static String password="16070065";
+static String url="jdbc:mysql://localhost/tiburonesblancos?characterEncoding=utf8";
 PreparedStatement ps;
 ResultSet rs;
 public static Connection getConection()

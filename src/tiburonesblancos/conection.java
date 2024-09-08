@@ -7,9 +7,9 @@ import java.sql.Statement;
 public class conection{
 	private static String db="tiburonesblancos";
 	private static String user="root";
-	private static String pass="";
+	private static String pass="16070065";
 	private static String host="localhost";
-	private static String server="jdbc:mysql://"+host+"/"+db;
+	private static String server="jdbc:mysql://"+host+"/"+db+"?characterEncoding=utf8";
         public static Connection getConexion(){
 		Connection cn=null;
 		try{
