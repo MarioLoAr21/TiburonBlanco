@@ -25,7 +25,7 @@ public class Menu extends javax.swing.JFrame {
     //----------------------------------------------------------------------------------------------------    
 static String login="root";
 static String password="16070065";
-static String url="jdbc:mysql://localhost/tiburonesblancos";
+static String url="jdbc:mysql://localhost/tiburonesblancos?characterEncoding=utf8";
 PreparedStatement ps;
 ResultSet rs;
 public static Connection getConection()
@@ -315,7 +315,7 @@ private void limpiarCajas()
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);
-        Grupos G=new Grupos();
+        GruposRespaldo G=new GruposRespaldo();
         G.setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
 

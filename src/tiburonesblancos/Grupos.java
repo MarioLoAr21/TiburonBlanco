@@ -35,12 +35,6 @@ public class Grupos extends javax.swing.JFrame{
             x.pagosActivos();
             x.noPagados();
             x.Pagados();
-            
-            
-        
-        
-        
-        
     }
 
        

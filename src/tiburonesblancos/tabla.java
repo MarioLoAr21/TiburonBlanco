@@ -12,7 +12,7 @@ import tiburonesblancos.Menu;
 public class tabla extends javax.swing.JFrame {
     static String login = "root";
     static String password = "16070065";
-    static String url = "jdbc:mysql://localhost/tiburonesblancos";
+    static String url = "jdbc:mysql://localhost/tiburonesblancos?characterEncoding=utf8";
     PreparedStatement ps;
     ResultSet rs;
 
