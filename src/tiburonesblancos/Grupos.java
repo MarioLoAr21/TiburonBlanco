@@ -6,6 +6,8 @@
 
 package tiburonesblancos;
 
+import java.awt.Image;
+import java.awt.Toolkit;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -61,6 +63,12 @@ Connection conn = null;
             x.Pagados();
             
             Table.setDefaultRenderer(Object.class, new ColorearFilas(3));
+    }
+    
+        @Override
+    public Image getIconImage(){
+        Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("imgs/icono.png"));
+    return retValue;
     }
 
 
@@ -213,8 +221,8 @@ Connection conn = null;
         jLFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setIconImage(getIconImage());
         setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(1920, 1080));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton3.setFont(new java.awt.Font("Century", 0, 12)); // NOI18N

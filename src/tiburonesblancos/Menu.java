@@ -5,6 +5,8 @@
  */
 package tiburonesblancos;
 
+import java.awt.Image;
+import java.awt.Toolkit;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -58,9 +60,17 @@ private void limpiarCajas()
     public Menu() {
   
         initComponents();
+        
         this.setLocationRelativeTo(null);
         //rsscalelabel.RSScaleLabel.setScaleLabel(jLFondo,"src/imgs/fondo_tiburonblanco.jpg");
     }
+    
+        @Override
+    public Image getIconImage(){
+        Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("imgs/icono.png"));
+    return retValue;
+    }
+    
     public String getUsuario()
 {
     String v="";
@@ -149,6 +159,7 @@ private void limpiarCajas()
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(4, 68, 124));
+        setIconImage(getIconImage());
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 

@@ -1,10 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package tiburonesblancos;
 
+import java.awt.Image;
+import java.awt.Toolkit;
 import java.awt.event.KeyEvent;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -14,10 +11,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import static tiburonesblancos.Registro.getConection;
 
-/**
- *
- * @author Giuseppe
- */
+
 public class Login extends javax.swing.JFrame {
 
     /**
@@ -63,9 +57,17 @@ public void validar(){
         this.setLocationRelativeTo(null);
         TextPrompt n=new TextPrompt("Ingrese su nombre de usuario",jTextField1);
         TextPrompt m=new TextPrompt("Ingrese su contraseña",jTextField2);
-       
+
     }
- 
+    
+    
+    @Override
+    public Image getIconImage(){
+        Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("imgs/icono.png"));
+    return retValue;
+    }
+    
+    
     public void usuarioActivo()
     {
         Connection con=null;
@@ -129,6 +131,7 @@ public void validar(){
         jPasswordField1.setText("jPasswordField1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setIconImage(getIconImage());
         setUndecorated(true);
         setResizable(false);
         addKeyListener(new java.awt.event.KeyAdapter() {

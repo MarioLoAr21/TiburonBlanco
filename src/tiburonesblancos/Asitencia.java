@@ -4,6 +4,8 @@
  */
 package tiburonesblancos;
 
+import java.awt.Image;
+import java.awt.Toolkit;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -111,6 +113,12 @@ public class Asitencia extends javax.swing.JFrame {
 
     }
 
+    
+        @Override
+    public Image getIconImage(){
+        Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("imgs/icono.png"));
+    return retValue;
+    }
 //----------------------------------------------------------------------------------------------------    
 
     static String login = "root";
@@ -473,6 +481,7 @@ public void ValidarCbxCategoria()
         jLFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setIconImage(getIconImage());
         setMinimumSize(new java.awt.Dimension(1920, 1080));
         setUndecorated(true);
         getContentPane().setLayout(null);

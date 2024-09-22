@@ -1,4 +1,6 @@
 package tiburonesblancos;
+import java.awt.Image;
+import java.awt.Toolkit;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -72,6 +74,13 @@ public class tabla extends javax.swing.JFrame {
         
         
     }
+    
+        @Override
+    public Image getIconImage(){
+        Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("imgs/icono.png"));
+    return retValue;
+    }
+    
 public String buscarA(String NombreA, String ApellidoA) {
         String i="";
         
@@ -115,6 +124,7 @@ public String buscarA(String NombreA, String ApellidoA) {
         jLFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setIconImage(getIconImage());
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 

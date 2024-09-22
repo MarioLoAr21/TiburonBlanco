@@ -6,6 +6,8 @@
 
 package tiburonesblancos;
 
+import java.awt.Image;
+import java.awt.Toolkit;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -197,6 +199,14 @@ public String getValorCarril2(String p, String c, String h)
         this.setLocationRelativeTo(null);
         //rsscalelabel.RSScaleLabel.setScaleLabel(jLFondo,"src/imgs/Actividades_Natacion.jpg");
     }
+    
+        @Override
+    public Image getIconImage(){
+        Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("imgs/icono.png"));
+    return retValue;
+    }
+    
+    
     public void ValidarCbxCategoria()
 {
     /*
@@ -426,6 +436,7 @@ public String getValorCarril2(String p, String c, String h)
         jTextField2.setText("jTextField2");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setIconImage(getIconImage());
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 

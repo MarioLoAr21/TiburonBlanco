@@ -6,6 +6,8 @@
 package tiburonesblancos;
 
 import java.awt.Dimension;
+import java.awt.Image;
+import java.awt.Toolkit;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -139,6 +141,12 @@ public void validar()
             System.err.println(e.toString());
         }
     }
+    
+        @Override
+    public Image getIconImage(){
+        Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("imgs/icono.png"));
+    return retValue;
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -185,6 +193,7 @@ public void validar()
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setExtendedState(6);
+        setIconImage(getIconImage());
         setMinimumSize(new java.awt.Dimension(1920, 1080));
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());

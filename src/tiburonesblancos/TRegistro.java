@@ -5,6 +5,8 @@
  */
 package tiburonesblancos;
 
+import java.awt.Image;
+import java.awt.Toolkit;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -331,6 +333,14 @@ public class TRegistro extends javax.swing.JFrame {
          jTRegistro.setRowHeight(30);
 
     }
+    
+        @Override
+    public Image getIconImage(){
+        Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("imgs/icono.png"));
+    return retValue;
+    }
+    
+    
 public void ValidarCbxCategoria()
 {
     /*
@@ -591,6 +601,7 @@ public void ValidarCbxCategoria()
         setAlwaysOnTop(true);
         setExtendedState(6);
         setFocusCycleRoot(false);
+        setIconImage(getIconImage());
         setUndecorated(true);
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
