@@ -23,7 +23,7 @@ public class ColorearFilas2 extends DefaultTableCellRenderer {
       
            
         
-        switch(table.getValueAt(row,4).toString())
+        switch(table.getValueAt(row,5).toString())
         {
             case "Pagado":
                componente.setBackground(Color.GREEN);               
@@ -33,7 +33,7 @@ public class ColorearFilas2 extends DefaultTableCellRenderer {
                  break;
             
             default:
-                componente.setBackground(Color.RED);
+                componente.setBackground(Color.WHITE);
                 break;                        
             
         }

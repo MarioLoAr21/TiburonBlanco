@@ -5,11 +5,11 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 public class conection{
-	private static String db="tiburonesblancos";
+	private static String db="tiburonesblancos?characterEncoding=latin1";
 	private static String user="root";
 	private static String pass="16070065";
 	private static String host="localhost";
-	private static String server="jdbc:mysql://"+host+"/"+db+"?characterEncoding=utf8";
+	private static String server="jdbc:mysql://"+host+"/"+db;
         public static Connection getConexion(){
 		Connection cn=null;
 		try{

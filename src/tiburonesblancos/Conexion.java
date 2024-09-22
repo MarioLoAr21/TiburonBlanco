@@ -8,7 +8,7 @@ public class Conexion  {
     String Cadena;
 static String login="root";
 static String password="16070065";
-static String url="jdbc:mysql://localhost/tiburonesblancos?characterEncoding=utf8";
+static String url="jdbc:mysql://localhost/tiburonesblancos?characterEncoding=latin1";
 
 
 

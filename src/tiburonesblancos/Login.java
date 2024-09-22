@@ -26,7 +26,7 @@ public class Login extends javax.swing.JFrame {
     //----------------------------------------------------------------------------------------------------    
 static String login="root";
 static String password="16070065";
-static String url="jdbc:mysql://localhost/tiburonesblancos?characterEncoding=utf8";
+static String url="jdbc:mysql://localhost/tiburonesblancos?characterEncoding=latin1";
 PreparedStatement ps;
 ResultSet rs;
 public static Connection getConection()
@@ -36,7 +36,6 @@ Connection conn = null;
            {
               Class.forName ("com.mysql.jdbc.Driver").newInstance ();
                conn = DriverManager.getConnection (url, login, password);               
-               System.out.println ("Conexion establecida");   
            }    catch (Exception e)
            {
                System.err.println ("Hubo problema para la conexión"+e);
@@ -313,7 +312,6 @@ public void validar(){
         Conexion x = new Conexion();
         
         psw2=x.buscarPsw(us);
-        System.out.println("Contraseña: "+ psw2);
         if(psw.equals(psw2)){
             x.pagosActivos();
             x.noPagados();

@@ -29,7 +29,7 @@ public class Grupos extends javax.swing.JFrame{
     String Cadena;
 static String login="root";
 static String password="16070065";
-static String url="jdbc:mysql://localhost/tiburonesblancos?characterEncoding=utf8";
+static String url="jdbc:mysql://localhost/tiburonesblancos?characterEncoding=latin1";
 
 PreparedStatement ps;
 ResultSet rs;
@@ -53,7 +53,6 @@ Connection conn = null;
     public Grupos() {
         initComponents();
         this.setLocationRelativeTo(null);
-        //rsscalelabel.RSScaleLabel.setScaleLabel(jLFondo,"src/imgs/Actividades_Natacion.jpg");
         mostrar();
         
             Conexion x = new Conexion();
@@ -179,9 +178,10 @@ Connection conn = null;
         Table2.getColumnModel().getColumn(3).setResizable(false);
         Table2.getColumnModel().getColumn(4).setPreferredWidth(100);
         Table2.getColumnModel().getColumn(4).setResizable(false);
+        Table2.getColumnModel().getColumn(5).setPreferredWidth(100);
+        Table2.getColumnModel().getColumn(5).setResizable(false);
+        
        
-       
-      
          Table2.setRowHeight(40);
 	}
     /** This method is called from within the constructor to
@@ -488,7 +488,8 @@ Connection conn = null;
         jTextField3.setText(model.getValueAt(i, 2).toString());
         
         mostrar2(model.getValueAt(i, 0).toString(),model.getValueAt(i, 1).toString(),model.getValueAt(i, 2).toString());
-        Table2.setDefaultRenderer(Object.class, new ColorearFilas2(3));
+        Table2.setDefaultRenderer(Object.class, new ColorearFilas2(5));
+
         
        
        
